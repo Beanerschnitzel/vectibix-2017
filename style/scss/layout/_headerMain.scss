@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.headerMain {}
+.headerMain-util {
+	background:blue;
+}
+.headerMain-utilInner {
+	display:flex;
+	max-width:$maxWidth;
+	margin-right:auto;
+	margin-left:auto;
+}
+.headerMain-navUtil {
+	list-style:none;
+	padding:0;
+	display:flex;
+}
+.headerMain-main {
+	background:green;
+}
+.headerMain-mainInner {
+	display:flex;
+	max-width:$maxWidth;
+	margin-right:auto;
+	margin-left:auto;
+}
+.headerMain-navMain {
+	list-style:none;
+	padding:0;
+	display:flex;
+}

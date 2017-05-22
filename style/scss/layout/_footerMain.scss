@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footerMain {
+	background:red;
+	position:relative;
+}
+// .headerMain-util {
+// 	background:blue;
+// }
+// .headerMain-utilInner {
+// 	display:flex;
+// 	max-width:$maxWidth;
+// 	margin-right:auto;
+// 	margin-left:auto;
+// }
+// .headerMain-navUtil {
+// 	list-style:none;
+// 	padding:0;
+// 	display:flex;
+// }
+.footerMain-main {
+	background:green;
+	display:flex;
+}
+.footerMain-inner {
+	max-width:$maxWidth;
+	margin-right:auto;
+	margin-left:auto;
+}
+.footerMain-nav {
+	list-style:none;
+	padding:0;
+	display:flex;
+}
+.footerMain-topLink {
+	position:absolute;
+	bottom:100%;
+	left:50%;
+	transform: translateX(-50%);
+	display:block;
+	background:red;
+}

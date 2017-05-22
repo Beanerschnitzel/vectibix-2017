@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to global notify message.
+// -----------------------------------------------------------------------------
+.notifyMain {
+	background:red;
+	position:relative;
+}
+.notifyMain-inner {
+	max-width:$maxWidth;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+}
+.notifyMain-close {
+	
+}

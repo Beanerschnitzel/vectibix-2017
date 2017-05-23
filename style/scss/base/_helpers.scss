@@ -1,7 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
-
+.noScroll {
+  height: 100%;
+  overflow: hidden;
+}
 //loop through each color in the $palettes map in style/scss/_variables.scss and add the modifiers
 @each $palette in $palettes {
     //Grab/Define the main colors e.g. "colorBrandBlue"

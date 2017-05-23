@@ -1,7 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-.headerMain {}
+.headerMain {
+	@include media-breakpoint-up(md) {
+		transition:all .5s;
+		&.is-sticky {
+			animation: fadein .5s;
+			position:fixed;
+			top:0;
+			right:0;
+			left:0;
+			.headerMain-util {
+				display:none;
+			}
+		}
+	}
+}
 .headerMain-util {
 	background:blue;
 }
@@ -29,4 +43,8 @@
 	list-style:none;
 	padding:0;
 	display:flex;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

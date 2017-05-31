@@ -15,8 +15,9 @@ header.headerMain
 			.headerMain-utilCollateral
 				a(href='').headerMain-ctaBtn Visit Patient Site
 				.headerMain-search
-					input(type='text',placeholder='Search').headerMain-searchBox
-					a(href='').headerMain-searchSubmit
+					label(for='headerMainSearch')
+					input(type='text',placeholder='Search',id='headerMainSearch').headerMain-searchBox
+					span.headerMain-searchToggle
 
 	.headerMain-main
 		.headerMain-mainInner

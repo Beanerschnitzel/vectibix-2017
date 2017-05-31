@@ -10,9 +10,10 @@ $colorBlack: #000 !default;
 /*
 * Define base brand colors and gray variables here and then add them to the map below
 */
-$colorBrandBlue: #1c8de3;
-$colorBrandOrange: #fa8b00;
-$colorBrandPurple: #9d31b4;
+$colorBrandBlue: #0094ca;
+$colorBrandBlueDark: #166299;
+$colorBrandCyan: #4bc1e1;
+$colorBrandOrange: #f6a704;
 $colorGray: #b0b0b0;
 /*
 * Place brand colors and gray in map for shades
@@ -35,6 +36,24 @@ $palettes: (
 		darker   : mix($colorBlack, $colorBrandBlue, 50%),
 		darkest  : mix($colorBlack, $colorBrandBlue, 75%)
 	),
+	colorBrandBlueDark: (
+		lightest : mix($colorWhite, $colorBrandBlueDark, 75%),
+		lighter  : mix($colorWhite, $colorBrandBlueDark, 55%),
+		light    : mix($colorWhite, $colorBrandBlueDark, 25%),
+		base     : $colorBrandBlueDark,
+		dark     : mix($colorBlack, $colorBrandBlueDark, 25%),
+		darker   : mix($colorBlack, $colorBrandBlueDark, 50%),
+		darkest  : mix($colorBlack, $colorBrandBlueDark, 75%)
+	),
+	colorBrandCyan: (
+		lightest : mix($colorWhite, $colorBrandCyan, 75%),
+		lighter  : mix($colorWhite, $colorBrandCyan, 55%),
+		light    : mix($colorWhite, $colorBrandCyan, 25%),
+		base     : $colorBrandCyan,
+		dark     : mix($colorBlack, $colorBrandCyan, 25%),
+		darker   : mix($colorBlack, $colorBrandCyan, 50%),
+		darkest  : mix($colorBlack, $colorBrandCyan, 75%)
+	),
 	colorBrandOrange: (
 		lightest : mix($colorWhite, $colorBrandOrange, 75%),
 		lighter  : mix($colorWhite, $colorBrandOrange, 55%),
@@ -43,15 +62,6 @@ $palettes: (
 		dark     : mix($colorBlack, $colorBrandOrange, 25%),
 		darker   : mix($colorBlack, $colorBrandOrange, 50%),
 		darkest  : mix($colorBlack, $colorBrandOrange, 75%)
-	),
-	colorBrandPurple: (
-		lightest : mix($colorWhite, $colorBrandPurple, 75%),
-		lighter  : mix($colorWhite, $colorBrandPurple, 55%),
-		light    : mix($colorWhite, $colorBrandPurple, 25%),
-		base     : $colorBrandPurple,
-		dark     : mix($colorBlack, $colorBrandPurple, 25%),
-		darker   : mix($colorBlack, $colorBrandPurple, 50%),
-		darkest  : mix($colorBlack, $colorBrandPurple, 75%)
 	),
 	colorGray: (
 		lightest : mix($colorWhite, $colorGray, 75%),
@@ -77,7 +87,8 @@ $colorBorder:map-get(map-get($palettes, 'colorGray'), 'lighter');
 /*
 * Global max-width
 */
-$maxWidth:1140px;
+$maxWidth:1000px;
+
 /*
 * bootstrap overrides
 */
@@ -87,3 +98,30 @@ $container-max-widths: (
   lg: $maxWidth - 1px,
   xl: $maxWidth
 );
+$font-family-base: 'GothamNarrow', Arial, sans-serif;
+
+//style main site elements
+
+// Main notification variables
+$notifyMain-background: $colorWhite;
+$notifyMain-color: inherit;
+$notifyMain-heading-color: map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+$notifyMain-heading-size: 22px;
+$notifyMain-toggle-color: $colorWhite;
+$notifyMain-close-color: map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+$notifyMain-close-size: 26px;
+
+// Main header variables
+$headerMain-ctaBtn-background: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+$headerMain-ctaBtn-color:$colorWhite;
+$headerMain-ctaBtn-size:13px;
+$headerMain-ctaBtn-border-radius:25px;
+
+$headerMain-search-background:$colorWhite;
+$headerMain-search-border-radius:25px;
+$headerMain-search-height:30px;
+
+$headerMain-searchToggle-color:$colorWhite;
+$headerMain-searchToggle-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+
+$headerMain-searchBox-size: 14px;

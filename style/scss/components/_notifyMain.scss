@@ -2,8 +2,10 @@
 // This file contains all styles related to global notify message.
 // -----------------------------------------------------------------------------
 .notifyMain {
-	background:red;
+	background:$notifyMain-background;
 	position:relative;
+	color:$notifyMain-color;
+	padding:$spacer/2;
 }
 .notifyMain-inner {
 	max-width:$maxWidth;
@@ -11,6 +13,24 @@
 	margin-left:auto;
 	display:flex;
 }
-.notifyMain-close {
+.notifyMain-heading {
+	color:$notifyMain-heading-color;
+	font-size:$notifyMain-heading-size;
+	margin-bottom:0;
+}
+.notifyMain-content {
+	@extend %noPhatBottom;
+}
+.notifyMain-toggle {
 	
+}
+.notifyMain-close {
+	@extend .fa-times;
+	color:$notifyMain-close-color;
+	font-size:$notifyMain-close-size;
+	margin-left:$spacer;
+	&:before {
+		@extend %iconStyle;
+
+	}
 }

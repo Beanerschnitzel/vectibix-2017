@@ -44,6 +44,50 @@
 	padding:0;
 	display:flex;
 }
+.headerMain-utilCollateral {
+	display:flex;
+	align-items:center;
+}
+.headerMain-ctaBtn {
+	background:$headerMain-ctaBtn-background;
+	color:$headerMain-ctaBtn-color;
+	font-size:$headerMain-ctaBtn-size;
+	border-radius:$headerMain-ctaBtn-border-radius;
+	padding:$spacer/4 $spacer;
+}
+.headerMain-search {
+	display:flex;
+	//align-items:center;
+	background:$headerMain-search-background;
+	border-radius:$headerMain-search-border-radius;
+	height:$headerMain-search-height;
+	line-height:$headerMain-search-height;
+	padding-right:$spacer/4;
+}
+input.headerMain-searchBox {
+	//line-height:$headerMain-searchBox-line-height;
+	border-width:0;
+	background:transparent;
+	border-width:0;
+	padding:0 $spacer/2;
+	font-size:$headerMain-searchBox-size;
+	&:focus {
+		outline:none;
+	}
+}
+.headerMain-searchToggle {
+	@extend .fa-search;
+	display:flex;
+	align-items:center;
+	color:$headerMain-searchToggle-color;
+	&:before {
+		@extend %iconStyle;
+		line-height:$headerMain-search-height;
+	}
+	.search-open & {
+		color:$headerMain-searchToggle-active-color;
+	}
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

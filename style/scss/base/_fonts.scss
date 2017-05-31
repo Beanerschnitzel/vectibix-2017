@@ -1,3 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+@font-face {
+    font-family: 'GothamNarrow';
+    src: url('../../font/GothamNarrow-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../../font/GothamNarrow-Medium.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamNarrow';
+    src: url('../../font/GothamNarrow-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../../font/GothamNarrow-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: bold;
+    font-style: normal;
+}

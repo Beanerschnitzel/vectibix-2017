@@ -46,3 +46,34 @@
     @include noPhatBottom;
 }
 
+//create an iconstyle mixin so you can just add fontawesome icons like so:
+// <p class="fa-asterisk">Now I have an icon without a clunky i element yo</p>
+
+@mixin iconStyle {
+  display: inline-block;
+  font: normal normal normal 14px/1 'FontAwesome';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right:.4em;
+}
+%iconStyle {
+    @include iconStyle;
+}
+[class^='fa-'],
+[class*=' fa-'] {
+    &:before {
+        @extend %iconStyle;
+
+        text-decoration: none;
+    }
+}
+//remove the margin when using the i element since there would most likely be a space used
+i[class^='fa-'],
+i[class*=' fa-'] {
+    &:before {
+        margin-right:0;
+    }
+}
+

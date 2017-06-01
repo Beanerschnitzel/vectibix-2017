@@ -2,42 +2,86 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footerMain {
-	background:red;
+	background:$footerMain-background;
+	color:$footerMain-color;
 	position:relative;
+	padding-bottom:$spacer*2;
+	font-size:$footerMain-size;
+
+
 }
-// .headerMain-util {
-// 	background:blue;
-// }
-// .headerMain-utilInner {
-// 	display:flex;
-// 	max-width:$maxWidth;
-// 	margin-right:auto;
-// 	margin-left:auto;
-// }
-// .headerMain-navUtil {
-// 	list-style:none;
-// 	padding:0;
-// 	display:flex;
-// }
+.footerMain-topLink {
+	text-transform:uppercase;
+	//position:absolute;
+	//bottom:100%;
+	//left:0;
+	//width:100%;
+	text-align:center;
+	display:block;
+	background:$footerMain-topLink-background;
+	color:$footerMain-topLink-color;
+	padding-top:$spacer/2;
+	padding-bottom:$spacer/2;
+	text-decoration:none;
+	&:hover {
+		text-decoration:none;
+		color:$footerMain-topLink-color;
+	}
+}
 .footerMain-main {
-	background:green;
 	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	border-bottom:2px solid $footerMain-main-border-color;
+	margin-bottom:$spacer;
+	padding-top:$spacer*3;
 }
 .footerMain-inner {
 	max-width:$maxWidth;
 	margin-right:auto;
 	margin-left:auto;
 }
+.footerMain-logo {
+	//padding-top:$spacer*.75;
+	padding-bottom:$spacer*.75;
+}
 .footerMain-nav {
 	list-style:none;
 	padding:0;
 	display:flex;
+	margin-bottom:0;
+	font-size:$footerMain-nav-size;
 }
-.footerMain-topLink {
-	position:absolute;
-	bottom:100%;
-	left:50%;
-	transform: translateX(-50%);
+.footerMain-navItem {
+	flex:1 1 auto;
+	text-align:center;
+	display:flex;
+	&:first-child {
+		text-align:left;
+		.footerMain-navLink {
+			padding-left:0;
+		}
+	}
+}
+.footerMain-navLink {
+	flex:0 0 100%;
 	display:block;
-	background:red;
+	display:flex;
+	align-items:center;
+	padding:$spacer*.75;
+	color:$footerMain-navLink-color;
+	text-decoration:none;
+	&:hover {
+		text-decoration:none;
+		color:$footerMain-navUtilLink-hover-color;
+	}
+
+}
+.footerMain-topLinkIcon {
+	margin-left:$spacer/2;
+}
+.footerMain-collateral {
+	p {
+		margin-bottom:0;
+	}
 }

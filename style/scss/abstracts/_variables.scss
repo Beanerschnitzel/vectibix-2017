@@ -81,6 +81,11 @@ $palettes: (
 $colorText:map-get(map-get($palettes, 'colorGray'), 'darker');
 
 /*
+ * overall body font color
+ */
+$colorLinks:map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+
+/*
  * Generic border color for consistency
  */
 $colorBorder:map-get(map-get($palettes, 'colorGray'), 'lighter');
@@ -112,6 +117,13 @@ $notifyMain-close-color: map-get(map-get($palettes, 'colorBrandBlue'), 'base');
 $notifyMain-close-size: 26px;
 
 // Main header variables
+$headerMain-util-background:map-get(map-get($palettes, 'colorBrandBlueDark'), 'base');
+
+$headerMain-navUtil-size: 14px;
+$headerMain-navUtilLink-color: $colorWhite;
+$headerMain-navUtilLink-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+
+
 $headerMain-ctaBtn-background: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
 $headerMain-ctaBtn-color:$colorWhite;
 $headerMain-ctaBtn-size:13px;
@@ -123,5 +135,25 @@ $headerMain-search-height:30px;
 
 $headerMain-searchToggle-color:$colorWhite;
 $headerMain-searchToggle-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+$headerMain-searchToggle-size:22px;
 
 $headerMain-searchBox-size: 14px;
+
+$headerMain-main-background:map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+
+$headerMain-navMainLink-color:$colorWhite;
+$headerMain-navMainLink-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+
+// Main footer variables
+$footerMain-background: map-get(map-get($palettes, 'colorBrandBlueDark'), 'base');
+$footerMain-color: $colorWhite;
+$footerMain-size: 14px;
+
+$footerMain-main-border-color:map-get(map-get($palettes, 'colorBrandCyan'), 'base');
+
+$footerMain-navLink-color:$colorWhite;
+$footerMain-navUtilLink-hover-color:$colorWhite;
+$footerMain-nav-size:14px;
+
+$footerMain-topLink-background:map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+$footerMain-topLink-color:$colorWhite;

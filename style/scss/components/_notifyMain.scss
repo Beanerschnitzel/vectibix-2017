@@ -5,13 +5,29 @@
 	background:$notifyMain-background;
 	position:relative;
 	color:$notifyMain-color;
-	padding:$spacer/2;
+	
+	transition: all .5s ease-in-out;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	overflow:hidden;
+	max-height:500px;
+	//transform: scale(1);
+
+
+	&.is-closed {
+		//padding:0;
+		max-height: 0;
+		//opacity:0;
+		//transform: scale(1, 0);
+		//transform-origin: top center;
+
+	}
 }
 .notifyMain-inner {
 	max-width:$maxWidth;
 	margin-right:auto;
 	margin-left:auto;
 	display:flex;
+	padding:$spacer/2;
 }
 .notifyMain-heading {
 	color:$notifyMain-heading-color;
@@ -20,7 +36,34 @@
 }
 .notifyMain-content {
 	@extend %noPhatBottom;
+	
+	// .hidden-content {
+	// 	transition: all .5s ease-in-out;
+	// 	  // position: stati;
+	// 	  // width: 1px;
+	// 	  // height: 1px;
+	// 	  // padding: 0;
+	// 	  // overflow: hidden;
+	// 	  // clip: rect(0,0,0,0);
+	// 	  // white-space: nowrap;
+	// 	  // clip-path: inset(50%);
+	// 	  // border: 0;
+ //  		&.is-hidden {
+	// 	  position: absolute;
+	// 	  width: 1px;
+	// 	  height: 1px;
+	// 	  padding: 0;
+	// 	  overflow: hidden;
+	// 	  clip: rect(0,0,0,0);
+	// 	  white-space: nowrap;
+	// 	  clip-path: inset(50%);
+	// 	  border: 0;
+ //  		}
+	// }
 }
+// .notifyMain-copy span {
+// 	//display:none;
+// }
 .notifyMain-toggle {
 	display:inline-block;
 	color:$colorLinks;
@@ -45,6 +88,7 @@
 	color:$notifyMain-close-color;
 	font-size:$notifyMain-close-size;
 	margin-left:$spacer;
+	cursor:pointer;
 	&:before {
 		@extend %iconStyle;
 

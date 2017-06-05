@@ -80,7 +80,9 @@
   font-size: $headerMain-navUtil-size;
   flex: 0 0 100%;
   flex-wrap: wrap;
+  border-top:1px solid $headerMain-navUtilMobile-border-color;
   @include media-breakpoint-up(lg) {
+  	border-top-width:0;
     display: none;
   }
 }
@@ -88,8 +90,8 @@
 .headerMain-navUtilMobileItem {
   flex: 1 1 0;
   min-width: 50%;
-  border-bottom: 1px solid $colorWhite;
-  border-left: 1px solid $colorWhite;
+  border-bottom: 1px solid $headerMain-navUtilMobile-border-color;
+  border-left: 1px solid $headerMain-navUtilMobile-border-color;
   &:first-child {
     border-left-width: 0;
   }
@@ -278,13 +280,11 @@
   flex: 0 0 100%;
   text-align: center;
   padding: $spacer/2;
-  border-bottom: 1px solid $colorWhite;
   @include media-breakpoint-up(lg) {
     border-radius: $headerMain-ctaBtn-border-radius;
     font-size: $headerMain-ctaBtn-size;
     padding: $spacer/4 $spacer;
     flex: 0 1 auto;
-    border-bottom-width: 0;
     .search-open & {
       opacity: 0;
       transform: translate(-100%, 0);

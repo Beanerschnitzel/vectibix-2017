@@ -117,6 +117,7 @@ $notifyMain-close-color: map-get(map-get($palettes, 'colorBrandBlue'), 'base');
 $notifyMain-close-size: 26px;
 
 // Main header variables
+$headerMain-navUtilMobile-border-color:$colorWhite;
 $headerMain-util-background:map-get(map-get($palettes, 'colorBrandBlueDark'), 'base');
 
 $headerMain-navUtil-size: 14px;

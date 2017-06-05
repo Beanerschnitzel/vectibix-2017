@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to global notify message.
+// -----------------------------------------------------------------------------
+.notifyTray {
+	transition:all 0.25s;
+	&.is-sticky {
+		position:fixed;
+		right:0;
+		bottom:0;
+		left:0;
+		background:$colorWhite;
+		height:110px;
+		overflow:hidden;
+		line-height:1.4;
+		h1,h2,h3,h4,h5,h6,p,ul,ol {
+			display:inline;
+		}
+		h2 {
+			font-size:24px;
+		}
+		.notifyTray-inner {
+			max-width:$maxWidth;
+			margin-right:auto;
+			margin-left:auto;
+			display:flex;
+			padding:$spacer $spacer 0 $spacer;
+			max-height:100%;
+			overflow:hidden;
+		}
+	}
+}
+
+.notifyTray-toggle {
+	display:none;
+	&:hover {
+		color:$notifyTray-toggle-hover-color;
+	}
+	.full & {
+		@extend .fa-minus;
+	}
+	&:before {
+		@extend %iconStyle;
+	}
+	.is-sticky & {
+		display:block;
+		cursor:pointer;
+		white-space:nowrap;
+		@extend .fa-plus;
+		color:$notifyTray-toggle-color;
+		padding-left:$spacer;
+	}
+}

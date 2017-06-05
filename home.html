@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.9.4/umd/popper.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/front-end/stickyHeader.js"></script>
-    <script src="js/front-end/notificationTray.js"></script>
+    <script src="js/front-end/notifyTray.js"></script>
     <script src="js/front-end/searchToggle.js"></script>
     <script src="js/front-end/notifyMainToggle.js"></script>
     <script src="js/front-end/headerMainNavMainToggle.js"></script>
@@ -20,6 +20,18 @@
   <body>
     <form>
       <div class="pageWrap">
+        <div class="notifyMain">
+          <div class="notifyMain-inner">
+            <div class="notifyMain-content">
+              <h2 class="notifyMain-heading">Heading</h2>
+              <div class="notifyMain-copy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              </div>
+            </div>
+            <div class="notifyMain-close"></div>
+          </div>
+        </div>
         <header class="headerMain">
           <div class="headerMain-util">
             <div class="headerMain-utilInner">
@@ -47,7 +59,7 @@
             <div class="headerMain-mainInner">
               <div class="headerMain-logo"><a class="headerMain-logoLink" href=""><img class="headerMain-logoImg" src="http://placehold.it/135x75"></a></div>
               <ul class="headerMain-navMain">
-                <li class="headerMain-navMainItem"><a class="headerMain-navMainLink" href="">Link Number One</a>
+                <li class="headerMain-navMainItem is-current"><a class="headerMain-navMainLink" href="">Link Number One</a>
                   <div class="headerMain-subContent">
                     <div class="headerMain-subContentInner">
                       <ul class="headerMain-subNav">
@@ -55,7 +67,7 @@
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                       </ul>
-                      <div class="headerMain-subcollateral"><a class="btn btn-primary" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
+                      <div class="headerMain-subcollateral"><a class="headerMain-subcollateralCta" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
                     </div>
                   </div>
                 </li>
@@ -67,7 +79,7 @@
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Oneb</a></li>
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Oneb</a></li>
                       </ul>
-                      <div class="headerMain-subcollateral"><a class="btn btn-primary" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
+                      <div class="headerMain-subcollateral"><a class="headerMain-subcollateralCta" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
                     </div>
                   </div>
                 </li>
@@ -79,7 +91,7 @@
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                       </ul>
-                      <div class="headerMain-subcollateral"><a class="btn btn-primary" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
+                      <div class="headerMain-subcollateral"><a class="headerMain-subcollateralCta" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
                     </div>
                   </div>
                 </li>
@@ -91,7 +103,7 @@
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                       </ul>
-                      <div class="headerMain-subcollateral"><a class="btn btn-primary" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
+                      <div class="headerMain-subcollateral"><a class="headerMain-subcollateralCta" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
                     </div>
                   </div>
                 </li>
@@ -103,7 +115,7 @@
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                       </ul>
-                      <div class="headerMain-subcollateral"><a class="btn btn-primary" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
+                      <div class="headerMain-subcollateral"><a class="headerMain-subcollateralCta" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
                     </div>
                   </div>
                 </li>
@@ -115,7 +127,7 @@
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                         <li class="headerMain-subNavItem"><a class="headerMain-subMainLink" href="">Link Number Onea</a></li>
                       </ul>
-                      <div class="headerMain-subcollateral"><a class="btn btn-primary" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
+                      <div class="headerMain-subcollateral"><a class="headerMain-subcollateralCta" href="">What clinical characteristics affect your third-line treatment decision?</a></div>
                     </div>
                   </div>
                 </li>
@@ -129,7 +141,93 @@
           </div>
         </header>
         <main>
-          <div class="container fillColorBrandBlue">
+          <div class="heroMain" style="background-image:url(img/content-images/Long_home_header.jpg);">
+            <div class="heroMain-inner">
+              <div class="heroMain-copy"><span class="heroMain-zone1">VECTIBIX<sup>&reg;</sup><span class="heroMain-zone1Sm">(panitumumab)</span></span><span class="heroMain-zone2">+ FOLFOX</span><span class="heroMain-zone3">LEAPS AHEAD</span><span class="heroMain-zone4">in patients with WT RAS* mCRC</span></div>
+            </div>
+          </div>
+          <section class="sideBySide">
+            <div class="sideBySide-inner">
+              <div class="sideBySide-img"><img src="img/content-images/first-line-circle.png"></div>
+              <div class="sideBySide-copy">
+                <h2 class="sideBySide-heading colorBrandOrange">5.6-month increase in median OS </h2>
+                <h2 class="sideBySide-subHeading colorBrandBlue">demonstrated with Vectibix® + FOLFOX vs FOLFOX alone in patients with WT RAS mCRC<sup>1</sup></h2>
+              </div>
+            </div>
+          </section>
+          <div class="container">
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here5</h1>
+            <h1>Structure/Content here4</h1>
+            <h1>Structure/Content here3</h1>
+            <h1>Structure/Content here2</h1>
+            <h1 class="testTrigger">Structure/Content here1</h1>
+            <div class="notifyTray is-sticky">
+              <div class="notifyTray-inner">
+                <div class="notifyTray-content">
+                  <h2>IMPORTANT SAFETY INFORMATION</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                </div>
+                <div class="notifyTray-toggle">See More</div>
+              </div>
+            </div>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
+            <h1>Structure/Content here</h1>
             <h1>Structure/Content here</h1>
           </div>
         </main>

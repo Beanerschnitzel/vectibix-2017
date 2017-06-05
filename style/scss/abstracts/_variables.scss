@@ -104,7 +104,8 @@ $container-max-widths: (
   xl: $maxWidth
 );
 $font-family-base: 'GothamNarrow', Arial, sans-serif;
-
+$headings-font-family: 'GothamCondensed';
+$headings-font-weight: bold;
 //style main site elements
 
 // Main notification variables
@@ -140,10 +141,27 @@ $headerMain-searchToggle-size:22px;
 
 $headerMain-searchBox-size: 14px;
 
-$headerMain-main-background:map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+$headerMain-main-background:rgba(map-get(map-get($palettes, 'colorBrandBlue'), 'base'),.75);
+
+$headerMain-navMainLink-mobile-active-color:$colorWhite;
+$headerMain-navMainLink-mobile-active-background:map-get(map-get($palettes, 'colorBrandOrange'), 'base');
 
 $headerMain-navMainLink-color:$colorWhite;
 $headerMain-navMainLink-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+
+$headerMain-subContent-background:rgba($colorWhite, .95);
+
+$headerMain-subMainLink-color: map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+$headerMain-subMainLink-size: 18px;
+$headerMain-subMainLink-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+
+$headerMain-subcollateralCta-color:$colorWhite;
+$headerMain-subcollateralCta-hover-color:$colorWhite;
+$headerMain-subcollateralCta-size:18px;
+$headerMain-subcollateralCta-background:map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+
+$notifyTray-toggle-color:map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+$notifyTray-toggle-hover-color:map-get(map-get($palettes, 'colorBrandCyan'), 'base');
 
 // Main footer variables
 $footerMain-background: map-get(map-get($palettes, 'colorBrandBlueDark'), 'base');

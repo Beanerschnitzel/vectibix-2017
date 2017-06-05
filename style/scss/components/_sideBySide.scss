@@ -1,0 +1,30 @@
+.sideBySide {
+}
+.sideBySide-inner {
+	max-width:$maxWidth;
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:15px;
+	padding-right:15px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	max-height:310px;
+}
+.sideBySide-img {
+	img {
+		max-width:100%;
+		height:auto;
+		display:inline-block;
+	}
+}
+.sideBySide-copy {
+	flex:0 0 50%;
+	max-width:50%;
+}
+.sideBySide-heading {
+	font-size:48px;
+}
+.sideBySide-subHeading {
+	font-size:36px;
+}

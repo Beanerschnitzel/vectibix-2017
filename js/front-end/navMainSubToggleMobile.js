@@ -6,9 +6,13 @@ jQuery(document).ready(function($) {
   function toggleSub() {
     $('.headerMain-navMainLink').on("click.mqlSubToggle", function(e) {
         e.preventDefault();
-        //alert('crap');
+      if (!$(this).closest('.headerMain-navMainItem').hasClass('is-open')) {
         $('.headerMain-navMainItem').removeClass('is-open');
         $(this).closest('.headerMain-navMainItem').addClass('is-open');
+      } else {
+        $('.headerMain-navMainItem').removeClass('is-open');
+      }
+
     });
   }
 

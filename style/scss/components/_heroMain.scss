@@ -1,0 +1,71 @@
+.heroMain {
+    min-height: 450px;
+    margin-top: -100px;
+    background-position: 38% center;
+    display: flex;
+    justify-content: center;
+}
+
+.heroMain-inner {
+    width: 100%;
+    max-width: $maxWidth;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.heroMain-copy {
+    //color: palette(colorBrandOrange, light);
+    padding-bottom:$spacer*4;
+    //text-shadow:0 0 30px rgba(palette(colorBrandBlueDark,base),.5);
+    background: linear-gradient(135deg, #f6cf3f 0%,#f6a800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position:relative;
+}
+
+.heroMain-zone1 {
+	float:left;
+    vertical-align: top;
+    font-size: 50px;
+    line-height: 1;
+    font-family:GothamBlack;
+    padding-right:$spacer/2;
+    sup {
+    	vertical-align:7px;
+    	position:static;
+    }
+}
+
+.heroMain-zone1Sm {
+    font-size: 30px;
+    display: block;
+    font-family:GothamNarrow;
+}
+
+.heroMain-zone2 {
+	float:left;
+    vertical-align: top;
+    font-size: 50px;
+    line-height: 1;
+    font-family:GothamBlack;
+}
+
+.heroMain-zone3 {
+	clear:left;
+    display: block;
+    font-size: 80px;
+    line-height: 1;
+    font-family:GothamBlack;
+}
+
+.heroMain-zone4 {
+    display: block;
+    text-align: right;
+    color: $colorWhite;
+    font-weight:normal;
+    font-size:26px;
+}

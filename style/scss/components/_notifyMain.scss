@@ -29,6 +29,9 @@
 	display:flex;
 	padding:$spacer/2;
 }
+.notifyMain-copy {
+	@extend %noPhatBottom;
+}
 .notifyMain-heading {
 	color:$notifyMain-heading-color;
 	font-size:$notifyMain-heading-size;

@@ -1,26 +1,26 @@
 $(document).ready(function() {
-    var placeholder = $('<div class="js-notifyStickyPLaceholder"></div>');
-    var toggleText = $('.notifySticky-toggle').text();
+    var placeholder = $('<div class="js-notifyTrayPLaceholder"></div>');
+    var toggleText = $('.notifyTray-toggle').text();
     var headerUtilHeight = $('.headerMain-util').outerHeight();
     var headerMainHeight = $('.headerMain-main').outerHeight();
     var notifyHeight = $('.notifyMain').outerHeight();
     var mergedHeight = headerUtilHeight + headerMainHeight + notifyHeight;
-    $('.notifySticky').before(placeholder);
-    $('.notifySticky-toggle').click(function() {
+    $('.notifyTray').before(placeholder);
+    $('.notifyTray-toggle').click(function() {
 
-        if ($('.notifySticky').hasClass('full')) {
+        if ($('.notifyTray').hasClass('full')) {
             $('body').removeClass('noScroll');
-            $('.notifySticky').removeClass('full');
+            $('.notifyTray').removeClass('full');
             $(this).text(toggleText)
-            $('.notifySticky').css('height', '');
+            $('.notifyTray').css('height', '');
         } else {
             $('body').addClass('noScroll');
-            $('.notifySticky').addClass('full');
+            $('.notifyTray').addClass('full');
             $(this).text('Close');
             if ($('.headerMain').hasClass('is-sticky')) {
-                $('.notifySticky').css('height', 'calc(100vh - ' + headerMainHeight + 'px)');
+                $('.notifyTray').css('height', 'calc(100vh - ' + headerMainHeight + 'px)');
             } else {
-                $('.notifySticky').css('height', 'calc(100vh - ' + mergedHeight + 'px)');
+                $('.notifyTray').css('height', 'calc(100vh - ' + mergedHeight + 'px)');
             }
         }
     });
@@ -36,10 +36,10 @@ function isScrolledIntoView(elem) {
 }
 
 $(window).scroll(function() {
-    if (isScrolledIntoView($('.js-notifyStickyPLaceholder'))) {
-        $('.notifySticky').addClass('unstuck');
+    if (isScrolledIntoView($('.js-notifyTrayPLaceholder'))) {
+        $('.notifyTray').removeClass('is-sticky');
 
     } else {
-        $('.notifySticky').removeClass('unstuck');
+        $('.notifyTray').addClass('is-sticky');
     }
 });

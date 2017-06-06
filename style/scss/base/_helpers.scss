@@ -29,3 +29,10 @@
     }
   }
 }
+//special fills
+.fillGradientBlue {
+  background: linear-gradient(45deg, #4bc1e1 0%, #166299 100%) !important;
+  &, a:not(.btn), a:not(.btn):hover {
+      color: $colorWhite;
+  }
+}

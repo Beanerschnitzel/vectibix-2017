@@ -1,30 +1,88 @@
 .sideBySide {
+  &.sideBySide--fillGradiantBlue {
+    color: $colorWhite;
+    background: linear-gradient(25deg, #166299 0%, #166299 20%, #4bc1e1 44%, #4bc1e1 100%);
+  }
 }
+
 .sideBySide-inner {
-	max-width:$maxWidth;
-	margin-right:auto;
-	margin-left:auto;
-	padding-left:15px;
-	padding-right:15px;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	max-height:310px;
+  max-width: $maxWidth;
+  margin-right: auto;
+  margin-left: auto;
+  padding: $spacer 15px;
+  // padding-left:15px;
+  // padding-right:15px;
+  display: flex;
+  flex-wrap: wrap;
+  // background:yellow;
+  @include media-breakpoint-up(lg) {
+    justify-content: center;
+    flex-direction: column;
+    height: 310px;
+  }
 }
+
 .sideBySide-img {
-	img {
-		max-width:100%;
-		height:auto;
-		display:inline-block;
-	}
+  flex: 0 0 50%;
+  max-width: 50%;
+  // background:blue;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  @include media-breakpoint-up(lg) {
+    flex: 0 1 100%;
+    max-width: none;
+    .sideBySide--imgRight & {
+      order: 1;
+      text-align: right;
+    }
+  }
 }
+
 .sideBySide-copy {
-	flex:0 0 50%;
-	max-width:50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  @include media-breakpoint-up(lg) {
+    flex: 0 1 auto;
+    max-width: 550px;
+    // background:green;
+    margin-left: auto;
+    .sideBySide--imgRight & {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
 }
+
 .sideBySide-heading {
-	font-size:48px;
+  @include responsive-font(5vw, 35px, 48px, 48px);
 }
+
 .sideBySide-subHeading {
-	font-size:36px;
+  @include responsive-font(5vw, 23px, 36px, 36px);
+}
+
+.sideBySide-cta {
+  // background:red;
+  flex: 0 0 100%;
+  max-width: 100%;
+  .btn {
+    //@include responsive-font(4vw, 18px, 24px, 24px);
+    display: block;
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    flex: 0 1 auto;
+    width: 550px;
+    // background:green;
+    margin-left: auto;
+    .sideBySide--imgRight & {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
 }

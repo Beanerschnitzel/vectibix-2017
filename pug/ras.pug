@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
 	head
 		include includes/_head.pug
-		title [client name]
+		title RAS Story
 
 	body
 		form
@@ -19,16 +19,41 @@ html(lang="en")
 								span.heroMain-zone2 + FOLFOX
 								span.heroMain-zone3 LEAPS AHEAD
 								span.heroMain-zone4 in patients with WT RAS* mCRC
-					section.sideBySide
-						.sideBySide-inner
-							.sideBySide-img
-								img(src='img/content-images/first-line-circle.png')
-							.sideBySide-copy
-								h2.sideBySide-heading.colorBrandOrange 5.6-month increase in median OS 
-								h2.sideBySide-subHeading.colorBrandBlue demonstrated with Vectibix® + FOLFOX vs FOLFOX alone in patients with WT RAS mCRC
-									sup 1
-							.sideBySide-cta
-								a(href='').btn.btn-secondary Explore first-line data in WT RAS mCRC
+					section.py-5
+						.container
+							h2.colorBrandBlue
+								| KRAS and NRAS are part of the
+								br
+								| RAS family of oncogenes
+								sup 1 
+							.row
+								.col-md-5
+									p RAS status definitions
+										sup 2
+										|:
+									ul
+										li RAS mutation negative, or wild type (WT), means the RAS genes (KRAS and NRAS) do not have mutations
+										li RAS mutation positive, or mutant type (MT), means that at least one of the RAS genes (KRAS or NRAS) contains a mutation that affects its function
+								.col-md-7
+									figure
+										img(src='img/content-images/kras-exor-2-analysis-sm.svg').d-md-none
+										img(src='img/content-images/kras-exor-2-analysis-lg.svg').d-none.d-md-block
+							p mCRC = metastatic colorectal cancer; MT = mutant type; WT = wild type.
+					section.py-5.fillGradientBlue
+						.container
+							p.colorBrandOrange
+								|Don't let patients with WT RAS* mCRC miss a chance for personalized treatment
+								sup 1 
+							h2
+								| The power of biomarker identification
+							hr
+							h3
+								|Identification of patients with WT RAS mCRC can help determine appropriate treatment options
+								sup 1
+							figure
+								img(src='img/content-images/kras-exor-2-analysis-sm.svg').d-md-none
+								img(src='img/content-images/kras-exor-2-analysis-lg.svg').d-none.d-md-block
+
 					section.sideBySide.sideBySide--imgRight.sideBySide--fillGradiantBlue
 						.sideBySide-inner
 							.sideBySide-img

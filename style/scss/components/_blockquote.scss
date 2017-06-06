@@ -1,0 +1,41 @@
+blockquote {
+    position:relative;
+    //background:red;
+    padding:$spacer $spacer $spacer $spacer*2;
+    font-size:28px;
+    font-family:'GothamCondensed';
+    line-height:1.2;
+    z-index:1;
+    //overflow:hidden;
+    &:before {
+      // content: "";
+      // position: absolute;
+      // top:50%; 
+      // left: 0;
+      // background-color: red;
+      // padding-bottom: 50%;
+      // width: 57.7%;
+      // z-index: -1;
+      // transform-origin: 0 0;
+      // transform: rotate(-30deg) skewX(30deg);
+    }
+    &:after {
+        content:'';
+        position:absolute;
+        background:currentcolor;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:-1;
+        opacity:.15;
+    }
+    cite {
+        font-size:23px;
+        font-style: normal;
+        display:block;
+        &:before {
+            content:'-' '\00a0';
+        }
+    }
+}

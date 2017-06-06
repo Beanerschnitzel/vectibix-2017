@@ -1,0 +1,219 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.pug
+		title First Line Data
+
+	body
+		form
+			.pageWrap
+				include includes/_notifyMain.pug
+				include includes/_headerMain.pug
+				main
+					.heroMain(style="background-image:url(img/content-images/Long_home_header.jpg);")
+						.heroMain-inner
+							.heroMain-copy
+								span.heroMain-zone1 VECTIBIX
+									sup &reg;
+									| (panitumumab) + FOLFOX
+								span.heroMain-zone2 LEAPS AHEAD
+								span.heroMain-zone3 in patients with WT
+									em.px-1 RAS* 
+									| mCRC
+					section.py-12
+						.container
+							h1.colorBrandBlue.mb-5
+								| PRIME: a predefined retrospective subset analysis of a phase 3, open-label, randomized (1:1), multicenter study of Vectibix
+								sup &reg;
+								|  Q2W + FOLFOX vs FOLFOX Q2W alone in first-line patients
+								sup 1,2
+							figure.mb-5
+								img(src='img/content-images/first-line-chart-1-sm.svg').d-md-none
+								img(src='img/content-images/first-line-chart-1-lg.svg').d-none.d-md-block
+							ul.textLg.colorGrayDark.pl-3
+								li Primary endpoint was PFS
+									sup 2
+								li
+									| Key secondary endpoints were OS, ORR,
+									sup §
+									|  and safety
+									sup 2
+
+							p.pullFirstChar.mb-0.colorGrayDark *Defined as wild type in both 
+								em KRAS 
+								| and 
+								em NRAS.
+								sup 1
+							p.pullFirstChar.mb-0.colorGrayDark
+								sup &dagger;
+								| Exon 2 in codons 12 or 13.
+								sup 1
+							p.pullFirstChar.mb-0.colorGrayDark
+								sup &Dagger;
+								em RAS mutation status was determined for 620 patients using Sanger bidirectional sequencing and Surveyor
+								sup &reg;
+								| /WAVE
+								sup &reg;
+								| analysis.
+								sup 1
+							p.pullFirstChar.colorGrayDark.mb-0
+								sup §
+								| Objective tumor response was evaluated by blinded central radiology review using modified RECIST criteria.
+								sup 2
+							p.colorGrayDark ECOG PS = Eastern Cooperative Oncology Group Performance Status; EGFR = epidermal growth factor receptor; mCRC = metastatic colorectal cancer; MT = mutant type; ORR = objective response rate; OS = overall survival; PFS = progression-free survival; PRIME = Panitumumab Randomized Trial in Combination With Chemotherapy for Metastatic Colorectal Cancer to Determine Efficacy; Q2W = every 2 weeks; RECIST = Response Evaluation Criteria in Solid Tumors; WT = wild type.
+							h2.colorBrandBlue.mb-5 Patient demographics and clinical characteristics
+								sup 1
+							.row
+								.col-md-9
+									table(width='100%').table--fiesta
+										thead
+											tr
+												th Demographic or clinical characteristic	
+												th WT* KRAS mCRC	
+												th WT RAS
+													sup &dagger;
+													| mCRC
+										tbody
+											tr
+												th Male 
+												td 64%
+												td 65% 
+											tr
+												th Race
+													ul.list-unstyled.normalWeight.pl-md-4.mb-0
+														li White
+														li Black
+														li Hispanic or Latino 
+												td
+													ul.list-unstyled.pt-5.mb-0
+														li 92%
+														li 2%
+														li 4%
+												td 
+													ul.list-unstyled.pt-5.mb-0
+														li 91%
+														li 2%
+														li 5%
+											tr
+												th Colon Cancer 
+												td 66% 
+												td 65%
+											tr
+												th Rectal Cancer 
+												td 34%
+												td 35%
+											tr
+												th ECOG PS 
+													ul.list-unstyled.normalWeight.pl-md-4.mb-0
+														li 0
+														li 1
+														li 2 
+												td
+													ul.list-unstyled.pt-5.mb-0
+														li 56%
+														li 38%
+														li 6%
+
+												td
+													ul.list-unstyled.pt-5.mb-0
+														li 57%
+														li 37%
+														li 6%
+											tr
+												th Median Age, Years 
+												td 61.5
+												td 61
+								.col-md-3
+									.row
+										.col-12
+											p.h2.colorBrandBlue.mb-5.mb-md-7
+												| In patients with WT 
+												em.px-1 KRAS
+												| mCRC 
+												sup 2
+										.col-12.col-sm-4.col-md-12.mb-2.mb-sm-7
+											p.h2.colorBrandOrange
+												| 86% had liver metastases
+												sup 2
+										.col-12.col-sm-4.col-md-12.mb-2.mb-sm-7
+											p.h2.colorBrandOrange
+												| 18% had liver-limited metastases
+												sup 2
+										.col-12.col-sm-4.col-md-12.mb-2.mb-sm-7
+											p.h2.colorBrandOrange
+												| 79% had 2 or more metastatic sites
+												sup 2
+							p.pullFirstChar.mb-0.colorGrayDark *Exon 2 in codons 12 or 13.
+								sup 1
+							p.pullFirstChar.mb-0.colorGrayDark
+								sup &dagger;
+								| Defined as wild type in both 
+								em KRAS 
+								| and 
+								em NRAS.
+								sup 1
+							p.colorGrayDark ECOG PS = Eastern Cooperative Oncology Group Performance Status; mCRC = metastatic colorectal cancer; WT = wild type.
+					section.py-12.fillGradientBlue
+						.container
+							.row
+								.col-md-9
+									p.colorBrandOrangeLight.textLg
+										| In the PRIME study of Vectibix® + FOLFOX vs FOLFOX alone
+										sup 1 
+									h2.fontDefault.h1
+										| 27.8% improvement in median PFS with Vectibix
+										sup &reg;
+										| + FOLFOX
+										sup 1
+									hr.hr--fade
+									h3.h2
+										|Identification of patients with WT RAS mCRC can help determine appropriate treatment options
+										sup 1
+									figure.mb-5
+										img(src='img/content-images/prime-population-sm.svg').shadow.d-md-none
+										img(src='img/content-images/prime-population-lg.svg').shadow.d-none.d-md-block
+							h3.h2.mb-5
+								| Vectibix® delivers efficacy for patients with WT
+								em.px-1 RAS 
+								| mCRC
+								sup 1 
+							ul.mb-5.pl-3
+								li Patients with MT RAS tumors should not be treated with Vectibix
+									sup &reg; 1
+							blockquote.my-5
+								| "All patients with metastatic colorectal cancer should have tumor tissue genotyped for RAS (KRAS and NRAS) mutations"
+								cite NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines
+									sup ®
+									| ) for Colon Cancer
+									sup 3
+							p.pullFirstChar *Defined as wild type in both 
+								em KRAS 
+								| and 
+								em NRAS.
+								sup 1
+							p.pullFirstChar
+								| &dagger;Exon 2 in codons 12 or 13.
+								sup 1
+								br
+								| mCRC = metastatic colorectal cancer; MT = mutant type; NCCN = National Comprehensive Cancer Network; PRIME = Panitumumab Randomized Trial in Combination With Chemotherapy for Metastatic Colorectal Cancer to Determine Efficacy; WT = wild type.
+					.container
+						.inlined.py-16.colorGrayDark
+							h2.h5 References:
+							ol
+								li
+									|  Vectibix
+									sup ®
+									|  (panitumumab) prescribing information, Amgen. 
+								li
+									|  Douillard J-Y, Oliner KS, Siena S, et al. Panitumumab–FOLFOX4 treatment and 
+									em RAS
+									|  mutations in colorectal cancer. 
+									em N Engl J Med.
+									|  2013;369(11):1023-1034. 
+								li
+									|  Referenced with permission from the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines
+									sup ®
+									| ) for Colon Cancer V2.2017. ©National Comprehensive Cancer Network, Inc 2017. All rights reserved. Accessed April 21, 2017. To view the most recent and complete version of the guideline, go online to NCCN.org. The National Comprehensive Cancer Network makes no warranties of any kind whatsoever regarding their content, use or application and disclaims any responsibility for their application or use in any way.
+						include includes/_notifyTray.pug
+				include includes/_footerMain.pug
+

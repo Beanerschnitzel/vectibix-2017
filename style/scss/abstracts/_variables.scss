@@ -106,6 +106,44 @@ $container-max-widths: (
 $font-family-base: 'GothamNarrow', Arial, sans-serif;
 $headings-font-family: 'GothamCondensed';
 $headings-font-weight: bold;
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem !default;
+$spacers: ( 0: 0, 
+	1: ($spacer * .25), 
+	2: ($spacer * .5), 
+	3: $spacer, 4: ($spacer * 1.5), 
+	5: ($spacer * 1.75), 
+	6: ($spacer * 2), 
+	7: ($spacer * 2.25), 
+	8: ($spacer * 2.5), 
+	9: ($spacer * 3), 
+	10: ($spacer * 3.25), 
+	11: ($spacer * 3.5), 
+	12: ($spacer * 3.75), 
+	13: ($spacer * 4), 
+	14: ($spacer * 4.25), 
+	15: ($spacer * 4.5), 
+	16: ($spacer * 4.75), 
+	17: ($spacer * 5), 
+	18: ($spacer * 5.25), 
+	19: ($spacer * 5.25), 
+	20: ($spacer * 5.5),
+	21: ($spacer * 5.75),
+	22: ($spacer * 6),
+	23: ($spacer * 6.25),
+	24: ($spacer * 6.5),
+	25: ($spacer * 6.75),
+	26: ($spacer * 7),
+	27: ($spacer * 7.25),
+	28: ($spacer * 7.5),
+	29: ($spacer * 7.75),
+	30: ($spacer * 8))
+	 !default;
+
 // $input-btn-padding-y:null;
 // $input-btn-padding-x:null;
 $btn-border-radius:0;

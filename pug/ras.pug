@@ -15,11 +15,12 @@ html(lang="en")
 							.heroMain-copy
 								span.heroMain-zone1 VECTIBIX
 									sup &reg;
-									span.heroMain-zone1Sm (panitumumab)
-								span.heroMain-zone2 + FOLFOX
-								span.heroMain-zone3 LEAPS AHEAD
-								span.heroMain-zone4 in patients with WT RAS* mCRC
-					section.py-5
+									| (panitumumab) + FOLFOX
+								span.heroMain-zone2 LEAPS AHEAD
+								span.heroMain-zone3 in patients with WT
+									em.px-1 RAS* 
+									| mCRC
+					section.py-12
 						.container
 							h2.colorBrandBlue
 								| KRAS and NRAS are part of the
@@ -27,72 +28,76 @@ html(lang="en")
 								| RAS family of oncogenes
 								sup 1 
 							.row
-								.col-md-5
-									p RAS status definitions
+								.col-md-5.colorGrayDark.pt-md-10
+									p.textLg RAS status definitions
 										sup 2
 										|:
-									ul
+									ul.textLg
 										li RAS mutation negative, or wild type (WT), means the RAS genes (KRAS and NRAS) do not have mutations
 										li RAS mutation positive, or mutant type (MT), means that at least one of the RAS genes (KRAS or NRAS) contains a mutation that affects its function
 								.col-md-7
 									figure
 										img(src='img/content-images/kras-exor-2-analysis-sm.svg').d-md-none
 										img(src='img/content-images/kras-exor-2-analysis-lg.svg').d-none.d-md-block
-							p mCRC = metastatic colorectal cancer; MT = mutant type; WT = wild type.
-					section.py-5.fillGradientBlue
+							p.colorGrayDark mCRC = metastatic colorectal cancer; MT = mutant type; WT = wild type.
+					section.py-12.fillGradientBlue
 						.container
-							p.colorBrandOrange
-								|Don't let patients with WT RAS* mCRC miss a chance for personalized treatment
+							.row
+								.col-md-9
+									p.colorBrandOrangeLight.textLg
+										| Don't let patients with WT RAS* mCRC miss a chance for personalized treatment
+										sup 1 
+									h2.fontDefault.h1
+										| The power of biomarker identification
+									hr.hr--fade
+									h3.h2
+										|Identification of patients with WT RAS mCRC can help determine appropriate treatment options
+										sup 1
+									figure.mb-5
+										img(src='img/content-images/prime-population-sm.svg').shadow.d-md-none
+										img(src='img/content-images/prime-population-lg.svg').shadow.d-none.d-md-block
+							h3.h2.mb-5
+								| Vectibix® delivers efficacy for patients with WT
+								em.px-1 RAS 
+								| mCRC
 								sup 1 
-							h2
-								| The power of biomarker identification
-							hr
-							h3
-								|Identification of patients with WT RAS mCRC can help determine appropriate treatment options
+							ul.mb-5.pl-3
+								li Patients with MT RAS tumors should not be treated with Vectibix
+									sup &reg; 1
+							blockquote.my-5
+								| "All patients with metastatic colorectal cancer should have tumor tissue genotyped for RAS (KRAS and NRAS) mutations"
+								cite NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines
+									sup ®
+									| ) for Colon Cancer
+									sup 3
+							p.pullFirstChar *Defined as wild type in both 
+								em KRAS 
+								| and 
+								em NRAS.
 								sup 1
-							figure
-								img(src='img/content-images/kras-exor-2-analysis-sm.svg').d-md-none
-								img(src='img/content-images/kras-exor-2-analysis-lg.svg').d-none.d-md-block
-
-					section.sideBySide.sideBySide--imgRight.sideBySide--fillGradiantBlue
-						.sideBySide-inner
-							.sideBySide-img
-								img(src='img/content-images/spot-the-difference-circle.png')
-							.sideBySide-copy
-								h2.sideBySide-heading The power of biomarker identification: 
-								h2.sideBySide-subHeading See how we identified patients with WT RAS mCRC and what it means
-									sup 1
-							.sideBySide-cta
-								a(href='').btn.btn-primary Learn more about WT 
+							p.pullFirstChar
+								| &dagger;Exon 2 in codons 12 or 13.
+								sup 1
+								br
+								| mCRC = metastatic colorectal cancer; MT = mutant type; NCCN = National Comprehensive Cancer Network; PRIME = Panitumumab Randomized Trial in Combination With Chemotherapy for Metastatic Colorectal Cancer to Determine Efficacy; WT = wild type.
+					.container
+						.inlined.py-16.colorGrayDark
+							h2.h5 References:
+							ol
+								li
+									|  Vectibix
+									sup ®
+									|  (panitumumab) prescribing information, Amgen. 
+								li
+									|  Douillard J-Y, Oliner KS, Siena S, et al. Panitumumab–FOLFOX4 treatment and 
 									em RAS
-					section.sideBySide
-						.sideBySide-inner
-							.sideBySide-img
-								img(src='img/content-images/know-your-patients-circle.png')
-							.sideBySide-copy
-								h2.sideBySide-heading.colorBrandOrange Know your patients:
-								h2.sideBySide-subHeading.colorBrandBlue Identification of patients with WT RAS mCRC can help determine appropriate treatment options
-									sup 1
-							.sideBySide-cta
-								a(href='').btn.btn-secondary Examine hypothetical patient profiles
-					section.sideBySide.sideBySide--imgRight.sideBySide--fillGradiantBlue
-						.sideBySide-inner
-							.sideBySide-img
-								img(src='img/content-images/third-line-circle.png')
-							.sideBySide-copy
-								h2.sideBySide-heading Proven in third line:  
-								h2.sideBySide-subHeading Demonstrated efficacy in patients with chemorefractory WT RAS mCRC
-									sup 1
-							.sideBySide-cta
-								a(href='').btn.btn-primary Review the results of Study 0007
-					.container.pt-5
-						p
-							|*Defined as wild type in both KRAS and NRAS.1
-							br
-							| mCRC = metastatic colorectal cancer; OS = overall survival; WT = wild type.
-						p
-							strong Reference:
-							| 1. Vectibix® (panitumumab) prescribing information, Amgen.
+									|  mutations in colorectal cancer. 
+									em N Engl J Med.
+									|  2013;369(11):1023-1034. 
+								li
+									|  Referenced with permission from the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines
+									sup ®
+									| ) for Colon Cancer V2.2017. ©National Comprehensive Cancer Network, Inc 2017. All rights reserved. Accessed April 21, 2017. To view the most recent and complete version of the guideline, go online to NCCN.org. The National Comprehensive Cancer Network makes no warranties of any kind whatsoever regarding their content, use or application and disclaims any responsibility for their application or use in any way.
 						include includes/_notifyTray.pug
 				include includes/_footerMain.pug
 

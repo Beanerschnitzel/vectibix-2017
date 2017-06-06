@@ -36,6 +36,7 @@
 	color:$notifyMain-heading-color;
 	font-size:$notifyMain-heading-size;
 	margin-bottom:0;
+	text-transform:uppercase;
 }
 .notifyMain-content {
 	@extend %noPhatBottom;

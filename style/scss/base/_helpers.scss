@@ -31,8 +31,51 @@
 }
 //special fills
 .fillGradientBlue {
-  background: linear-gradient(45deg, #4bc1e1 0%, #166299 100%) !important;
+  background: linear-gradient(45deg, #4bc1e1 0%, #166299 80%) !important;
   &, a:not(.btn), a:not(.btn):hover {
       color: $colorWhite;
   }
+}
+.shadow {
+  box-shadow: 0 20px 20px 0 rgba(palette(colorBrandBlue,dark), .25);
+}
+.pullFirstChar {
+  &::first-letter,sup:first-child {
+    margin-left:-.5em;
+  }
+}
+.fontDefault {
+  font-family:$font-family-base;
+}
+.fontHeadings {
+  font-family:$font-family-base;
+}
+.fontBlack {
+  font-family:'GothamCondensed';
+}
+.inlined {
+  * {
+      display:inline;
+      padding:0;
+      margin-bottom:0;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      color:palette(colorGray,darker);
+    }
+    ol {
+      li {
+        counter-increment: step-counter;
+        &:before {
+            content: counter(step-counter) '.';
+            font-weight: bold;
+            color:palette(colorGray,darker);
+        }
+      }
+    }
+}
+.textLg {
+  font-size:20px !important;
+}
+.normalWeight {
+  font-weight:normal !important;
 }

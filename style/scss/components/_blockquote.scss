@@ -7,18 +7,18 @@ blockquote {
     line-height:1.2;
     z-index:1;
     //overflow:hidden;
-    &:before {
-      // content: "";
-      // position: absolute;
-      // top:50%; 
-      // left: 0;
-      // background-color: red;
-      // padding-bottom: 50%;
-      // width: 57.7%;
-      // z-index: -1;
-      // transform-origin: 0 0;
-      // transform: rotate(-30deg) skewX(30deg);
-    }
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: palette(colorBrandOrange,base);
+  //   padding-left: 10%;
+  //   height: 100%;
+  //   z-index: -1;
+  //   transform-origin: 0 0;
+  //   transform: rotate(30deg) skewY(36deg);
+  // }
     &:after {
         content:'';
         position:absolute;
@@ -28,7 +28,7 @@ blockquote {
         right:0;
         bottom:0;
         z-index:-1;
-        opacity:.15;
+        opacity:.2;
     }
     cite {
         font-size:23px;

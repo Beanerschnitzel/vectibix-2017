@@ -92,7 +92,7 @@ $colorBorder:map-get(map-get($palettes, 'colorGray'), 'lighter');
 /*
 * Global max-width
 */
-$maxWidth:1170px;
+$maxWidth:1000px;
 
 /*
 * bootstrap overrides
@@ -198,9 +198,15 @@ $headerMain-navMainLink-mobile-active-background:map-get(map-get($palettes, 'col
 $headerMain-navMainLink-color:$colorWhite;
 $headerMain-navMainLink-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
 
+$headerMain-subContent-mobile-background:$colorWhite;
 $headerMain-subContent-background:rgba($colorWhite, .95);
 
-$headerMain-subMainLink-color: map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+// $headerMain-subMainLink-color: map-get(map-get($palettes, 'colorBrandBlue'), 'base');
+// $headerMain-subMainLink-size: 18px;
+// $headerMain-subMainLink-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+
+$headerMain-subMainLink-mobile-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+$headerMain-subMainLink-color: map-get(map-get($palettes, 'colorBrandCyan'), 'base');
 $headerMain-subMainLink-size: 18px;
 $headerMain-subMainLink-active-color: map-get(map-get($palettes, 'colorBrandOrange'), 'base');
 

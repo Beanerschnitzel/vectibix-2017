@@ -10,16 +10,13 @@ html(lang="en")
 				include includes/_notifyMain.pug
 				include includes/_headerMain.pug
 				main
-					.heroMain(style="background-image:url(img/content-images/Long_home_header.jpg);")
-						.heroMain-inner
-							.heroMain-copy
-								span.heroMain-zone1 VECTIBIX
-									sup &reg;
-									| (panitumumab) + FOLFOX
-								span.heroMain-zone2 LEAPS AHEAD
-								span.heroMain-zone3 in patients with WT
-									em.px-1 RAS* 
-									| mCRC
+					.hero(style="background-image:url(img/content-images/hero.png)")
+						.hero-inner
+							.hero-copy
+								span.hero-zone1 In the first-line treatment of mCRC
+									sup 1 
+								span.hero-zone2 Biomarker identification can provide critical information
+									sup 2
 					section.py-12
 						.container
 							h2.colorBrandBlue
@@ -70,7 +67,7 @@ html(lang="en")
 									sup ®
 									| ) for Colon Cancer
 									sup 3
-							p.pullFirstChar *Defined as wild type in both 
+							p.pullFirstChar.mb-0 *Defined as wild type in both 
 								em KRAS 
 								| and 
 								em NRAS.

@@ -1,10 +1,10 @@
 //toggle search on lg screens
 
 jQuery(document).ready(function($) {
-  var mqlSrch = window.matchMedia("(min-width: 768px)");
+  var mql = window.matchMedia("(min-width: 768px)");
 
   function toggleSearch() {
-    $('.headerMain-searchToggle').on("click.mqlSrch", function() {
+    $('.headerMain-searchToggle').on("click.mql", function() {
       if (!$('.headerMain').hasClass('search-open')) {
         $('.headerMain').addClass('search-open');
         $('.headerMain-searchBox').focus();
@@ -16,12 +16,12 @@ jQuery(document).ready(function($) {
   }
 
   function resetIt() {
-    $('.headerMain-searchToggle').off("click.mqlSrch");
+    $('.headerMain-searchToggle').off("click.mql");
     $('.headerMain').removeClass('search-open');
   }
 
-  function screenSize(mqlSrch) {
-    if (mqlSrch.matches) {
+  function screenSize(mql) {
+    if (mql.matches) {
       toggleSearch();
     } else {
       resetIt();
@@ -29,6 +29,6 @@ jQuery(document).ready(function($) {
   }
 
   // Handle media query 'change' event
-  mqlSrch.addListener(screenSize);
-  screenSize(mqlSrch);
+  mql.addListener(screenSize);
+  screenSize(mql);
 });

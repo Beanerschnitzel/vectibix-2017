@@ -10,16 +10,18 @@ html(lang="en")
 				include includes/_notifyMain.pug
 				include includes/_headerMain.pug
 				main
-					.heroMain(style="background-image:url(img/content-images/Long_home_header.jpg);")
-						.heroMain-inner
-							.heroMain-copy
-								span.heroMain-zone1 VECTIBIX
+					.hero(style="background-image:url(img/content-images/hero.png)")
+						.hero-inner
+							.hero-copy
+								span.hero-zone1 In the first-line treatment of patients with WT
+									em.px-1 RAS
 									sup &reg;
-									| (panitumumab) + FOLFOX
-								span.heroMain-zone2 LEAPS AHEAD
-								span.heroMain-zone3 in patients with WT
-									em.px-1 RAS* 
 									| mCRC
+									sup 1 
+								span.hero-zone2 Vectibix
+									sup &reg;
+									|: The first and only anti-EGFR approved in combination with FOLFOX 
+									sup 1
 					section.py-12
 						.container
 							h1.colorBrandBlue.mb-5
@@ -30,7 +32,7 @@ html(lang="en")
 							figure.mb-5
 								img(src='img/content-images/first-line-chart-1-sm.svg').d-md-none
 								img(src='img/content-images/first-line-chart-1-lg.svg').d-none.d-md-block
-							ul.textLg.colorGrayDark.pl-3
+							ul.textLg.colorGrayDark
 								li Primary endpoint was PFS
 									sup 2
 								li
@@ -166,36 +168,141 @@ html(lang="en")
 										| + FOLFOX
 										sup 1
 									hr.hr--fade
-									h3.h2
-										|Identification of patients with WT RAS mCRC can help determine appropriate treatment options
+									p.textLg.mb-0 Significant increase in median PFS with Vectibix
+										sup &reg;
+										| + FOLFOX in patients with WT
+										em.px-1 KRAS*
+										| mCRC (n=325)
 										sup 1
-									figure.mb-5
-										img(src='img/content-images/prime-population-sm.svg').shadow.d-md-none
-										img(src='img/content-images/prime-population-lg.svg').shadow.d-none.d-md-block
-							h3.h2.mb-5
-								| Vectibix® delivers efficacy for patients with WT
-								em.px-1 RAS 
-								| mCRC
-								sup 1 
-							ul.mb-5.pl-3
-								li Patients with MT RAS tumors should not be treated with Vectibix
-									sup &reg; 1
-							blockquote.my-5
-								| "All patients with metastatic colorectal cancer should have tumor tissue genotyped for RAS (KRAS and NRAS) mutations"
-								cite NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines
-									sup ®
-									| ) for Colon Cancer
-									sup 3
-							p.pullFirstChar *Defined as wild type in both 
+										| :
+									ul.textLg.mb-7
+										li PFS (prespecified major efficacy endpoint): 9.6 months vs 8.0 months with FOLFOX alone (n = 331) (HR = 0.80, 95% CI: 0.66–0.97; P = 0.02)
+											sup 1
+
+									h3.h2.mb-5
+										|Retrospective exploratory analysis in the WT RAS
+										sup &dagger;
+										| subgroup in PRIME
+										sup 1
+							figure.mb-5
+								img(src='img/content-images/pfs-table-sm.png').d-md-none
+								img(src='img/content-images/pfs-table-lg.png').d-none.d-md-block
+							ul.mb-5.textLg
+								li There were no OS or PFS benefits in patients treated with Vectibix
+									sup &reg;
+									| with RAS-mutant mCRC
+									sup 1
+							p.textLg.pullFirstChar.mb-0 *Exon 2 in codons 12 or 13.
+								sup 1
+							p.textLg.pullFirstChar.mb-0 
+								sup &dagger;
+								| Defined as wild type in both 
 								em KRAS 
 								| and 
 								em NRAS.
 								sup 1
-							p.pullFirstChar
-								| &dagger;Exon 2 in codons 12 or 13.
+							p.textLg
+								| CI = confidence interval; HR = hazard ratio; mCRC = metastatic colorectal cancer; PFS = progression-free survival; PRIME = Panitumumab Randomized Trial in Combination With Chemotherapy for Metastatic Colorectal Cancer to Determine Efficacy; WT = wild type.
+					section.py-12
+						.container
+							.row
+								.col-md-9
+									p.colorBrandBlue.textLg
+										| In the PRIME study of Vectibix® + FOLFOX vs FOLFOX alone
+										sup 1 
+									h2.colorBrandOrange.fontDefault.h1
+										| Vectibix
+										sup &reg; 
+										| + FOLFOX improved ORR1*
+									hr.hr--fade.colorBrandBlue
+									p.textLg.mb-0 
+										| In patients with WT 
+										em KRAS
+										sup.px-1 &dagger;
+										|  mCRC, Vectibix
+										sup ®
+										|  + FOLFOX (n = 325) demonstrated
+										sup 1
+										| :
+									ul.textLg.mb-7
+										li
+											| ORR: 54% (95% CI: 48%–59%) vs 47% (95% CI: 41%–52%) with FOLFOX alone (n = 331)
+											sup 1
+
+									h3.h2.mb-5.colorBrandBlue
+										| ORR in patients with WT 
+										em RAS
+										sup.px-1 ‡
+										|  mCRC in the PRIME study
+										sup 1
+							figure.mb-5
+								img(src='img/content-images/first-line-chart-3-sm.svg').d-md-none
+								img(src='img/content-images/first-line-chart-3-lg.svg').d-none.d-md-block
+							p.pullFirstChar.mb-0 *Objective tumor response was evaluated by blinded central radiology review using modified RECIST criteria.
+								sup 2
+							p.pullFirstChar.mb-0 
+								sup &dagger;
+								| Exon 2 in codons 12 or 13.
 								sup 1
-								br
-								| mCRC = metastatic colorectal cancer; MT = mutant type; NCCN = National Comprehensive Cancer Network; PRIME = Panitumumab Randomized Trial in Combination With Chemotherapy for Metastatic Colorectal Cancer to Determine Efficacy; WT = wild type.
+							p.pullFirstChar.mb-0 
+								sup &Dagger;
+								| Defined as wild type in both KRAS and NRAS.
+								sup 1
+							p
+								| CI = confidence interval; mCRC = metastatic colorectal cancer; ORR = objective response rate; PRIME = Panitumumab Randomized Trial in Combination With Chemotherapy for Metastatic Colorectal Cancer to Determine Efficacy; RECIST = Response Evaluation Criteria in Solid Tumors; WT = wild type.
+					section.py-12.fillGradientBlue
+						.container
+							p.colorBrandOrangeLight.textLg
+								| In a retrospective exploratory analysis of OS in the PRIME study of Vectibix
+								sup &reg;
+								| + FOLFOX vs FOLFOX alone
+								sup 1 
+							h2.fontDefault.h1
+								| 27.8% improvement in median PFS with Vectibix
+								sup &reg;
+								| + FOLFOX
+								sup 1
+							hr.hr--fade
+							p.textLg.mb-0 In patients with WT
+								em KRAS
+								sup.px-1 &dagger;
+								| mCRC, Vectibix
+								sup &reg;
+								| + FOLFOX (n = 325) demonstrated
+								sup 1
+								| :
+							ul.textLg.mb-7
+								li OS (exploratory analysis): 23.8 months vs 19.4 months with FOLFOX alone (n = 331)  (HR = 0.83, 95% CI: 0.70–0.98)
+									sup 1
+
+							h3.h2.mb-5
+								| 27.7% increase in median OS with Vectibix
+								sup &reg;
+								|  + FOLFOX vs FOLFOX alone in patients with WT 
+								em RAS
+								sup &dagger;
+								|  mCRC (HR = 0.77, 95% CI: 0.64–0.94)
+								sup 1
+							figure.mb-5
+								img(src='img/content-images/first-line-chart-4-sm.png').d-md-none
+								img(src='img/content-images/first-line-chart-4-lg.png').d-none.d-md-block
+							ul.mb-5.textLg
+								li There were no OS or PFS benefits in patients treated with Vectibix
+									sup &reg;
+									| with RAS-mutant mCRC
+									sup 1
+							p.textLg.pullFirstChar.mb-0 *Exon 2 in codons 12 or 13.
+								sup 1
+							p.textLg.pullFirstChar.mb-0 
+								sup &dagger;
+								| Defined as wild type in both 
+								em KRAS 
+								| and 
+								em NRAS.
+								sup 1
+							p.textLg
+								| CI = confidence interval; HR = hazard ratio; mCRC = metastatic colorectal cancer; PFS = progression-free survival; PRIME = Panitumumab Randomized Trial in Combination With Chemotherapy for Metastatic Colorectal Cancer to Determine Efficacy; WT = wild type.
+
 					.container
 						.inlined.py-16.colorGrayDark
 							h2.h5 References:

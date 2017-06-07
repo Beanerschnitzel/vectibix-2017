@@ -14,6 +14,14 @@ body {
 	color:$colorText;
 	overflow-x:hidden;
 }
+ul, ol {
+	padding-left:$spacer;
+}
+img {
+	display:inline-block;
+	max-width:100%;
+	height:auto;
+}
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing

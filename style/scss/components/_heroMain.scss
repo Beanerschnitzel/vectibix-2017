@@ -1,9 +1,18 @@
 .heroMain {
     min-height: 450px;
-    margin-top: -100px;
-    background-position: 38% center;
+    background-position: center;
+    background-repeat:no-repeat;
     display: flex;
-    justify-content: center;
+    background-size:cover;
+    @include media-breakpoint-up(lg) {
+    	justify-content: center;
+    	min-height: 450px;
+    	background-position: 38% center;
+    	margin-top: -100px;
+        .header-sticky & {
+            margin-top:0;
+        }
+    }
 }
 
 .heroMain-inner {
@@ -12,32 +21,32 @@
     padding-right: 15px;
     padding-left: 15px;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    @include media-breakpoint-up(lg) {
+	    align-items: flex-end;
+	    justify-content: flex-end;
+    }
 }
 
 .heroMain-copy {
     color: palette(colorBrandOrange, light);
-    padding-bottom:$spacer*5;
+    padding-top:$spacer*2;
     text-shadow:0 0 30px rgba(palette(colorBrandBlueDark,base),.75);
-    //background: linear-gradient(135deg, #f6cf3f 0%,#f6a800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    //color:transparent;
-    //-webkit-background-clip: text;
-    //background-clip: text;
     position:relative;
-    text-align:right;
+    text-align:center;
+    width:100%;
+    @include media-breakpoint-up(lg) {
+    	text-align:right;
+    	padding-top:0;
+    	padding-bottom:$spacer*5;
+    }
 }
 
 .heroMain-zone1 {
     display: block;
     letter-spacing:2px;
-	//float:left;
-    //vertical-align: top;
-
-    font-size: 32px;
     line-height: 1;
-    //font-family:GothamBlack;
     padding-right:$spacer/2;
+    @include responsive-font(3vw, 28px, 32px, 32px);
     sup {
     	vertical-align:7px;
     	position:static;
@@ -45,26 +54,27 @@
 }
 
 .heroMain-zone2 {
-    display: block;
-	//float:left;
-    //vertical-align: top;
-    font-size: 78px;
-    line-height: 1;
-    font-family:GothamBlack;
+    display: none;
+    @include media-breakpoint-up(lg) {
+    	display:inline;
+    }
 }
-
-// .heroMain-zone3 {
-// 	//clear:left;
-//     display: block;
-//     font-size: 80px;
-//     line-height: 1;
-//     font-family:GothamBlack;
-// }
 
 .heroMain-zone3 {
     display: block;
-    text-align: right;
-    color: $colorWhite;
-    font-weight:normal;
-    font-size:26px;
+    font-size: 78px;
+    line-height: 1;
+    font-family:GothamBlack;
+    @include responsive-font(5vw, 50px, 78px, 78px);
+}
+
+.heroMain-zone4 {
+    display: none;
+    @include media-breakpoint-up(lg) {
+	    display: block;
+	    text-align: right;
+	    color: $colorWhite;
+	    font-weight:normal;
+	    font-size:26px;
+    }
 }

@@ -1,0 +1,49 @@
+.hero {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    color: $colorWhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    min-height: 300px;
+    background-position: 45% center;
+    margin-top: -100px;
+    .header-sticky & {
+      margin-top: 0;
+    }
+  }
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: $maxWidth;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero-copy {
+  text-shadow: 0 0 30px rgba(palette(colorBrandBlueDark, base), .75);
+  position: relative;
+  width: 70%;
+  padding-bottom: $spacer*2.5;
+}
+
+.hero-zone1 {
+  display: block;
+  padding-right: $spacer/2;
+  font-size: 18px;
+  sup {
+    vertical-align: 7px;
+    position: static;
+  }
+}
+
+.hero-zone2 {
+  font-size: 40px;
+  line-height: 1.2;
+}

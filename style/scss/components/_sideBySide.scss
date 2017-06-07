@@ -10,11 +10,8 @@
   margin-right: auto;
   margin-left: auto;
   padding: $spacer 15px;
-  // padding-left:15px;
-  // padding-right:15px;
   display: flex;
   flex-wrap: wrap;
-  // background:yellow;
   @include media-breakpoint-up(lg) {
     justify-content: center;
     flex-direction: column;
@@ -25,7 +22,6 @@
 .sideBySide-img {
   flex: 0 0 50%;
   max-width: 50%;
-  // background:blue;
   img {
     max-width: 100%;
     height: auto;
@@ -44,10 +40,12 @@
 .sideBySide-copy {
   flex: 0 0 50%;
   max-width: 50%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
   @include media-breakpoint-up(lg) {
     flex: 0 1 auto;
     max-width: 550px;
-    // background:green;
     margin-left: auto;
     .sideBySide--imgRight & {
       margin-left: 0;
@@ -65,11 +63,9 @@
 }
 
 .sideBySide-cta {
-  // background:red;
   flex: 0 0 100%;
   max-width: 100%;
   .btn {
-    //@include responsive-font(4vw, 18px, 24px, 24px);
     display: block;
     @include media-breakpoint-up(lg) {
       display: inline-block;
@@ -78,7 +74,6 @@
   @include media-breakpoint-up(lg) {
     flex: 0 1 auto;
     width: 550px;
-    // background:green;
     margin-left: auto;
     .sideBySide--imgRight & {
       margin-left: 0;

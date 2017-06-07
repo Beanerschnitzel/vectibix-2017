@@ -10,15 +10,17 @@ html(lang="en")
 				include includes/_notifyMain.pug
 				include includes/_headerMain.pug
 				main
-					.heroMain(style="background-image:url(img/content-images/Long_home_header.jpg);")
+					.heroMain(data-lg='img/content-images/hero-main-lg.jpg', data-sm='img/content-images/hero-main-sm.jpg')
 						.heroMain-inner
 							.heroMain-copy
 								span.heroMain-zone1 VECTIBIX
 									sup &reg;
-									span.heroMain-zone1Sm (panitumumab)
-								span.heroMain-zone2 + FOLFOX
+									| (panitumumab)
+									span.heroMain-zone2 + FOLFOX
 								span.heroMain-zone3 LEAPS AHEAD
-								span.heroMain-zone4 in patients with WT RAS* mCRC
+								span.heroMain-zone4 in patients with WT
+									em.px-1 RAS* 
+									| mCRC
 					section.sideBySide
 						.sideBySide-inner
 							.sideBySide-img

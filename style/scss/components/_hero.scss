@@ -8,7 +8,7 @@
     background-size: cover;
     justify-content: center;
     min-height: 300px;
-    background-position: 45% center;
+    background-position: 48% center;
     margin-top: -100px;
     .header-sticky & {
       margin-top: 0;
@@ -23,14 +23,15 @@
   padding-left: 15px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
 }
 
 .hero-copy {
   text-shadow: 0 0 30px rgba(palette(colorBrandBlueDark, base), .75);
   position: relative;
-  width: 70%;
-  padding-bottom: $spacer*2.5;
+  width: 78%;
+  padding-top: $spacer*8;
+  display:flex;
+  flex-direction:column;
 }
 
 .hero-zone1 {

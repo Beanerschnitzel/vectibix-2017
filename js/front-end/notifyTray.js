@@ -1,13 +1,14 @@
 $(document).ready(function() {
     var placeholder = $('<div class="js-notifyTrayPLaceholder"></div>');
     var toggleText = $('.notifyTray-toggle').text();
-    var headerUtilHeight = $('.headerMain-util').outerHeight();
-    var headerMainHeight = $('.headerMain-main').outerHeight();
-    var notifyHeight = $('.notifyMain').outerHeight();
-    var mergedHeight = headerUtilHeight + headerMainHeight + notifyHeight;
+    
     $('.notifyTray').before(placeholder);
     $('.notifyTray-toggle').click(function() {
-
+        var headerUtilHeight = parseInt($('.headerMain-util').outerHeight());
+        var headerMainHeight = parseInt($('.headerMain-main').outerHeight());
+        var notifyHeight = parseInt($('.notifyMain').outerHeight());
+        var mergedHeight = headerUtilHeight + headerMainHeight + notifyHeight;
+        var windowHeight = $(window).outerHeight();
         if ($('.notifyTray').hasClass('full')) {
             $('body').removeClass('noScroll');
             $('.notifyTray').removeClass('full');
@@ -17,10 +18,10 @@ $(document).ready(function() {
             $('body').addClass('noScroll');
             $('.notifyTray').addClass('full');
             $(this).text('Close');
-            if ($('.headerMain').hasClass('is-sticky')) {
-                $('.notifyTray').css('height', 'calc(100vh - ' + headerMainHeight + 'px)');
+            if ($('body').hasClass('header-sticky')) {
+                $('.notifyTray').css('height', (windowHeight - 75) + 'px');
             } else {
-                $('.notifyTray').css('height', 'calc(100vh - ' + mergedHeight + 'px)');
+                $('.notifyTray').css('height', (windowHeight - mergedHeight) + 'px');
             }
         }
     });

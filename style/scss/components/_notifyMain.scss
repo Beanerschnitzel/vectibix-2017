@@ -1,6 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to global notify message.
 // -----------------------------------------------------------------------------
+.showToggle {
+	color:palette(colorBrandBlue,base) !important;
+	color:red;
+}
 .notifyMain {
 	background:$notifyMain-background;
 	position:relative;

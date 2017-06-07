@@ -3,14 +3,14 @@ jQuery(document).ready(function($) {
 
   function stickyHeader() {
     var $headerHeight = $('.headerMain').outerHeight();
-    //var $notifyHeight = $('.notifyMain').outerHeight();
-    //var $mergedHeight = $headerHeight + $notifyHeight;
-    var shrinkHeader = $headerHeight;
+    // var $notifyHeight = $('.notifyMain').outerHeight();
+    // var $mergedHeight = $headerHeight + $notifyHeight;
+    var shrinkHeader = $headerHeight + 100;
     $(window).on('scroll.mql', function() {
         var scroll = getCurrentScroll();
         if (scroll >= shrinkHeader) {
             $('body').addClass('header-sticky');
-            $("main").css("padding-top", $mergedHeight);
+            $("main").css("padding-top", $headerHeight);
         } else {
             $('body').removeClass('header-sticky');
             $("main").css("padding-top", '');

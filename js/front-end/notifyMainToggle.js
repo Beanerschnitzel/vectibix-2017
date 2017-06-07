@@ -8,74 +8,84 @@ $(document).ready(function() {
 
 
 (function($) {
-   $.fn.truncateText = function(options) {
+   $.fn.truncateText = function(opts) {
       var defaults = {
-         length: 249,
-         toggleText: "Show More"
+         lengthSm: 50,
+         lengthMed: 100,
+         lengthLg: 150,
+         breakSm: 500,
+         breakLg: 850,
+         toggleText: "Read More"
       };
       var options = $.extend({}, defaults, options);
 
       var $containers = this;
-      var subLength = options.length;
-      var hiddenSubStart = subLength + 1;
+
+      var visibleLegnthEffective;
+      var visibleLegnthSm = options.lengthSm;
+      var visibleLegnthMed = options.lengthMed;
+      var visibleLegnthLg = options.lengthLg;
+
+      var breakSm = options.breakSm;
+      var breakLg = options.breakLg;
+
       var toggleText = options.toggleText;
 
-      $containers.each(function() {
-         var $container = $(this);
-         var $children = $container.children();
+      initialize();
 
-         var text;
-         var textLength;
-         var visibleText;
-         var hiddenText;
+      // $(window).on('resize orientationchange', function() {
+      //    unwrap();
+      // });
 
-         if ($children.length) {
-            $children.each(function(index) {
-               var $child = $(this);
+      // function unwrap() {
+      //    $containers.each(function() {
+      //       $(this).find('.ellipse').remove();
+      //       $(this).find('.showToggle').remove();
+      //       $(this).find('.hiddenText').each(function() {
+      //          $(this).before($(this).text());
+      //       });
+      //       $(this).find('.hiddenText').remove();
+      //    });
+      //    initialize();
+      // }
 
-               if (index === 0) {
-                  text = $child.text();
-                  textLength = text.length;
-                  visibleText = text.substring(0, subLength);
-                  hiddenText = text.substring(hiddenSubStart, textLength);
-
-                  $child
-                     .text(visibleText)
-                     .append($('<i>...</i>'))
-                     .append($('<a class="showToggle" style="margin-left:5px;font-weight:bold;cursor:pointer;">' + toggleText + '</a>'))
-                     .append($('<span class="sr-only">' + hiddenText + '</span>'));
-               } else {
-                  $child
-                     .html($('<span class="sr-only">' + $child.text() + '</span>'));
-               }
-            });
+      function initialize() {
+         if (window.matchMedia("(max-width:" + breakSm + "px)").matches) {
+            visibleLegnthEffective = visibleLegnthSm;
+         } else if (window.matchMedia("(max-width:" + breakLg + "px)").matches) {
+            visibleLegnthEffective = visibleLegnthMed;
          } else {
-            text = $container.text();
-            textLength = text.length;
-            visibleText = text.substring(0, subLength);
-            hiddenText = text.substring(hiddenSubStart, textLength);
+            visibleLegnthEffective = visibleLegnthLg;
+         }
+         wireUp();
+      }
+
+      function wireUp() {
+         //loop through each container and wire up indiviually 
+         $containers.each(function() {
+            var $container = $(this);
+
+            var originalHtml = $container.html();
+            var originalText = $container.text();
+            var truncatedText = $.trim(originalText).substring(0, visibleLegnthEffective).split(" ").slice(0, -1).join(" ") + " ";
+
+            var $showMore = $('<a class="showToggle" style="margin-left:5px;font-weight:bold;cursor:pointer;">' + toggleText + '</a>' + '<i class="colorBrandBlue fa-chevron-right ml-1">' + '</i>')
 
             $container
-               .text(visibleText)
-               .append($('<a class="showToggle" style="margin-left:5px;font-weight:bold;cursor:pointer;">' + toggleText + '</a>'))
-               .append($('<span class="sr-only">' + hiddenText + '</span>'));
-         }
-      });
+               .text(truncatedText)
+               .append($('<i class="ellipse">...</i>'))
+               .append($showMore);
 
-      $('.showToggle').click(function() {
-         $(this)
-            .closest('.' + $containers.attr('class'))
-            .find('span')
-            .removeClass('sr-only');
-         $(this)
-            .closest('.' + $containers.attr('class'))
-            .find('i')
-            .remove();
-         $(this).remove();
-      });
+            //add show event to generated toggle buttons
+            $showMore.click(function() {
+               $container.html(originalHtml);
+            });
 
+            return $container;
+         });
+      }
       return $containers;
-   }
+   };
 }(jQuery));
 
 

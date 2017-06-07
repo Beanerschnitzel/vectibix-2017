@@ -224,7 +224,7 @@
         background: $headerMain-navMainLink-mobile-active-background;
     }
     @include media-breakpoint-up(lg) {
-        font-size:20px;
+        font-size:19px;
         border-top-width: 0;
         &:after {
             display: none;

@@ -193,10 +193,12 @@
     }
 }
 .headerMain-navMainItem {
-    &:hover {
-        .headerMain-subContent .headerMain-subContentInner {
-            max-height: 200px;
-            z-index: 2;
+    @include media-breakpoint-up(lg) {
+        &:hover {
+            .headerMain-subContent .headerMain-subContentInner {
+                max-height: 200px;
+                z-index: 2;
+            }
         }
     }
 }
@@ -208,13 +210,14 @@
     text-decoration: none;
     display: flex;
     align-items:center;
-    justify-content: space-between;
+    //justify-content: space-between;
     border-top: 1px solid;
-    &:after {
+    &.hasChildren:after {
         @extend %iconStyle;
         content: "";
         font-size: 20px;
         width: $spacer*1.5;
+        margin-left:auto;
     }
     &:hover {
         color: $headerMain-navMainLink-active-color;

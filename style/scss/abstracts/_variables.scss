@@ -215,8 +215,8 @@ $headerMain-subcollateralCta-hover-color:$colorWhite;
 $headerMain-subcollateralCta-size:18px;
 $headerMain-subcollateralCta-background:map-get(map-get($palettes, 'colorBrandOrange'), 'base');
 
-$notifyTray-toggle-color:map-get(map-get($palettes, 'colorBrandBlue'), 'base');
-$notifyTray-toggle-hover-color:map-get(map-get($palettes, 'colorBrandCyan'), 'base');
+$notifyTray-toggle-color:map-get(map-get($palettes, 'colorBrandOrange'), 'base');
+$notifyTray-toggle-hover-color:map-get(map-get($palettes, 'colorBrandOrange'), 'base');
 
 // Main footer variables
 $footerMain-background: map-get(map-get($palettes, 'colorBrandBlueDark'), 'base');

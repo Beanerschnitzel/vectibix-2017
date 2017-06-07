@@ -1,9 +1,9 @@
 $(document).ready(function() {
     var placeholder = $('<div class="js-notifyTrayPLaceholder"></div>');
-    var toggleText = $('.notifyTray-toggle').text();
+    var toggleText = $('.notifyTray-toggleLink').text();
     
     $('.notifyTray').before(placeholder);
-    $('.notifyTray-toggle').click(function() {
+    $('.notifyTray-toggleLink').click(function() {
         var headerUtilHeight = parseInt($('.headerMain-util').outerHeight());
         var headerMainHeight = parseInt($('.headerMain-main').outerHeight());
         var notifyHeight = parseInt($('.notifyMain').outerHeight());

@@ -75,9 +75,6 @@
 	&:hover {
 		color:$notifyTray-toggle-hover-color;
 	}
-	.full & {
-		@extend .fa-minus;
-	}
 	&:before {
 		@extend %iconStyle;
 	}
@@ -88,5 +85,8 @@
 		@extend .fa-plus;
 		color:$notifyTray-toggle-color;
 		padding-left:$spacer;
+	}
+	.full & {
+		@extend .fa-minus;
 	}
 }
